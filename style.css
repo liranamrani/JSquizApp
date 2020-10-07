@@ -23,17 +23,19 @@ body{
 }
 
 .quiz-header{
-    padding: 4rem;
+    padding: 0  rem;
 }
 
 ul{
     list-style-type: none;
     padding: 0;
+    margin-left: 2rem;
 }
 
 ul li {
     font-size: 1.1rem;
     margin: 1rem 0;
+    
 }
 ul li label{
     cursor: pointer;
@@ -44,7 +46,27 @@ h1{
     margin: 0;
 }
 h2{
-    margin: 0;
+    margin-left: 2rem;
+}
+h3{
+    text-align: center;
+    padding: 1rem;
+}
+
+#tryAgainBtn{
+    background-color: yellow;
+    padding: 0.7rem;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    color: black;
+    border: 1px solid #999999;
+
+}
+
+#tryAgainBtn:hover {
+    background-color: rgb(236, 213, 0);
 }
 
 button{
@@ -62,6 +84,13 @@ button{
 }
 button:hover {
     background-color: #8e4491;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }
 
 footer{
